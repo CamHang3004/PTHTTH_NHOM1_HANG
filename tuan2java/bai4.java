@@ -12,6 +12,7 @@ public class bai4 {
         int tong=0;
         for (int i=1;i<=n;i++){
             tong += i;
+            s.close();
         }
         System.out.println("TONG CAC GIA TRỊ TU 1 --> n là: "+tong);
     }
