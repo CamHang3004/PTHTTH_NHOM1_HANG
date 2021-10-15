@@ -1,7 +1,5 @@
 package GitHub.PTHTTH_NHOM1_HANG.tuan3java;
 
-import java.io.File;
-
 import java.io.BufferedReader;
 
 import java.io.FileReader;
@@ -10,7 +8,7 @@ import java.io.IOException;
 import javax.swing.JOptionPane;
 
  
-  class fileReader extends Thread {
+ public class FileTReader extends Thread {
      String name;
      public void FileRead(String ten){this.name = ten;}
      public  void load() {
@@ -28,12 +26,12 @@ import javax.swing.JOptionPane;
  }
  public class bai2 {
  public static void main(String[] args) {
-    FileReader f1 = new FileReader("D:/doc.txt");
-    f1.start;
-    FileReader f2 = new FileReader("D:/doc2.txt");
-    f2.start;
-    FileReader f3 = new FileReader("D:/doc3.txt");
-    f3.start;
+    FileRead f1 = new FileRead("D:/doc.txt");
+    f1.start();
+    FileRead f2 = new FileRead("D:/doc2.txt");
+    f2.start();
+    FileRead f3 = new FileRead("D:/doc3.txt");
+    f3.start();
     
 
  }}
